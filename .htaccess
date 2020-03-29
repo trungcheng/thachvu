@@ -1,0 +1,12 @@
+RewriteEngine on
+RewriteBase /
+Redirect 301 /tin-tuc/gioi-thieu-ve-thach-vu.html /gioi-thieu
+Redirect 301 /chau-rua-bat-bang-da%0A /chau-rua-bat-bang-da
+Redirect 301 https://thachvu.com/%0A https://thachvu.com
+Redirect 301 https://thachvu.com/</td> https://thachvu.com
+RewriteCond %{HTTP_HOST} ^www.thachvu.com [NC]
+RewriteRule ^(.*)$ https://thachvu.com/$1 [L,R=301]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{REQUEST_URI} !^public
+RewriteRule ^(.*)$ public/$1 [L]
