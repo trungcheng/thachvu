@@ -377,7 +377,7 @@
         <div class="heading">
             <h3 style="font-size:20px;">Bồn rửa chén giá rẻ</h3>
             <hr style="margin-bottom:10px">
-            <img src="http://thachvu.com/backend/uploads/images/chau-rua-bat-bon-rua-chen.jpg" alt="Chậu rửa bát bằng đá nhân tạo" style="width:100%;padding-bottom:10px">
+            <img src="/backend/uploads/images/chau-rua-bat-bon-rua-chen.jpg" alt="Chậu rửa bát bằng đá nhân tạo" style="width:100%;padding-bottom:10px">
             <p>Ngày nay, <strong>chậu rửa chén</strong> là một trong những thiết bị vô cùng quan trọng của căn bếp. Hình ảnh những chiếc <a href="https://thachvu.com/chau-rua-bat-bang-da"><strong>chậu rửa bát bằng đá</strong></a> nhân tạo lại càng được rất nhiều người trên thế giới ưu chuộng và tin dùng.
             Nó không những đem lại các ưu điểm như: nhiều màu sắc, không gây tiếng ồn khi sử dụng, không thấm nước và độ bền cực cao. Mà còn được xem như là món đồ trang trí tăng thêm vẻ đẹp cho căn bếp nhà bạn.
             Thiết kế sang trọng gồm: bồn rửa chén 1 hộc, 2 hộc, 2 ngăn 1 cánh đẹp mắt rất tiện ích cho các bà nội trợ.<br>
