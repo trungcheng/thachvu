@@ -10,12 +10,12 @@
 // https://docs.ckeditor.com/ckfinder/ckfinder3-php/debugging.html
 
 // Production
-error_reporting(E_ALL & ~E_DEPRECATED & ~E_STRICT);
-ini_set('display_errors', 1);
+// error_reporting(E_ALL & ~E_DEPRECATED & ~E_STRICT);
+// ini_set('display_errors', 1);
 
 // Development
-// error_reporting(E_ALL);
-// ini_set('display_errors', 1);
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 /*============================ General Settings =======================================*/
 // https://docs.ckeditor.com/ckfinder/ckfinder3-php/configuration.html
@@ -32,8 +32,8 @@ $config['authentication'] = function () {
 /*============================ License Key ============================================*/
 // https://docs.ckeditor.com/ckfinder/ckfinder3-php/configuration.html#configuration_options_licenseKey
 
-$config['licenseName'] = 'thachvu.com';
-$config['licenseKey']  = 'KV2VMMY4MJNA6NVRT4AXMSVRMWNFR';
+$config['licenseName'] = '';
+$config['licenseKey']  = '';
 
 /*============================ CKFinder Internal Directory ============================*/
 // https://docs.ckeditor.com/ckfinder/ckfinder3-php/configuration.html#configuration_options_privateDir
@@ -65,8 +65,8 @@ $config['images'] = array(
 $config['backends'][] = array(
     'name'         => 'default',
     'adapter'      => 'local',
-    'baseUrl'      => '/public/backend/uploads/',
-    // 'root'         => '', // Can be used to explicitly set the CKFinder user files directory.
+    'baseUrl'      => '/backend/uploads/',
+    'root'         => __DIR__ . '/../../../public' . '/backend/uploads/', // Can be used to explicitly set the CKFinder user files directory.
     'chmodFiles'   => 0777,
     'chmodFolders' => 0755,
     'filesystemEncoding' => 'UTF-8',

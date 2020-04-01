@@ -17,6 +17,10 @@ class AppServiceProvider extends ServiceProvider
 
     public function boot()
     {
+	if (\App::environment('production')) {
+    		\URL::forceScheme('https');
+  	}
+
         view()->composer('*', function($view) {
             $view->with('countItemCart', Cart::count());
             $view->with('categories', Category::all());
