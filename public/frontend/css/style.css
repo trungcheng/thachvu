@@ -6699,7 +6699,7 @@ footer .social p a {
 
 }
 
-.pagination li a {
+.pagination li a, .pagination li span {
 
 	border: 1px solid #eaeaea;
 

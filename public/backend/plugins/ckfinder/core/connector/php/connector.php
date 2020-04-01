@@ -12,7 +12,6 @@
  */
 
 require_once __DIR__ . '/vendor/autoload.php';
-//require_once '/var/www/thachvu.com/vendor/autoload.php';
 
 use CKSource\CKFinder\CKFinder;
 
