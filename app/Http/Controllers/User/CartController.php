@@ -167,6 +167,8 @@ class CartController extends Controller
                 env('MAIL_USERNAME')
             ];
 
+            var_dump($emails);die;
+
             Mail::send('pages/user/mail/order_temp', [
                 'order' => $order,
                 'name' => $obj_info['customer_name'], 
