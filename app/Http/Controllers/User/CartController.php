@@ -164,7 +164,7 @@ class CartController extends Controller
             $emails = [
                 $data['customer_email'],
                 \Auth::user()->email,
-                env('MAIL_USERNAME')
+                \Config::get('mail.from.address')
             ];
 
             var_dump($emails);die;
