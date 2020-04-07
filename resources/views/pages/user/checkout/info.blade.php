@@ -121,8 +121,8 @@
                   <p style="font-size:15px;padding-left:15px;">Phương thức vận chuyển</p>
                   <!-- Free Delivery -->
                   <select id="delivery" class="hide" name="delivery_method">
-                    <option selected value="Vận chuyển miễn phí">Vận chuyển miễn phí</option>
-                    <option value="Vận chuyển chuyển nhanh">Vận chuyển chuyển nhanh</option>
+                    <option value="Vận chuyển miễn phí">Vận chuyển miễn phí</option>
+                    <option value="Vận chuyển nhanh">Vận chuyển nhanh</option>
                   </select>
                   <div class="col-sm-6">
                     <div class="deli-method charges select">
