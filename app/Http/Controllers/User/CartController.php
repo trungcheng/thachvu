@@ -164,8 +164,8 @@ class CartController extends Controller
                 'cartInfo' => $cartInfo,
                 'total' => Cart::subtotal(0, '.', '.')
             ], function($message) use ($data, $order) {
-                $message->to([$data['customer_email'], env('MAIL_USERNAME')])
-                        ->cc(\Auth::user()->email)
+                $message->to($data['customer_email'])
+                        ->cc([\Auth::user()->email, env('MAIL_USERNAME')])
                         ->subject('Xác nhận đơn hàng #'.$order->id);
             });
 
