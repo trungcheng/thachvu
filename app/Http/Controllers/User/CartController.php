@@ -114,12 +114,15 @@ class CartController extends Controller
     {
         $validator = \Validator::make($request->all(), [
             'customer_name' => 'required',
+            'customer_email' => 'required|email',
             'customer_phone' => 'required|numeric|digits_between:10,11',
             'customer_address' => 'required',
             'delivery_method' => 'required',
             'payment_method' => 'required'
         ], [
             'customer_name.required' => 'Họ tên khách hàng không được để trống',
+            'customer_email.required' => 'Email khách hàng không được để trống',
+            'customer_email.email' => 'Email khách hàng không đúng định dạng',
             'customer_phone.required' => 'Số điện thoại không được để trống',
             'customer_phone.digits_between' => 'Số điện thoại phải 10 hoặc 11 số ',
             'customer_phone.numeric' => 'Số điện thoại chỉ được nhập số',
@@ -160,6 +163,7 @@ class CartController extends Controller
 
             $emails = [
                 $data['customer_email'],
+                \Auth::user()->email,
                 env('MAIL_USERNAME')
             ];
 
@@ -170,7 +174,6 @@ class CartController extends Controller
                 'total' => Cart::subtotal(0, '.', '.')
             ], function($message) use ($emails, $order) {
                 $message->to($emails)
-                        ->cc(\Auth::user()->email)
                         ->subject('Xác nhận đơn hàng #'.$order->id);
             });
 
